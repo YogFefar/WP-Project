@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Covid Tracker</title>
+	<meta charset="ISO-8859-1"> 
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="Covid%20Tracker2_files/css.css" rel="stylesheet">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="Covid%20Tracker2_files/bootstrap.css">
+	<link rel="stylesheet" href="Covid%20Tracker2_files/bootstrap.css">
+	<script src="Covid%20Tracker2_files/jquery_002.js"></script>
+	<script src="Covid%20Tracker2_files/popper.js"></script>
+	<script src="Covid%20Tracker2_files/bootstrap.js"></script>
+	<script src="Covid%20Tracker2_files/jquery.js"></script>
+
+<style>
+		/*google font*/
+	body {
+	    font-family: 'Josefin Sans';font-size: 22px;
+	}
+	  /* Make the image fully responsive */
+	  .carousel-inner img {
+	    width: 100%;
+	    height: 100%;
+	  }
+
+
+
+/*live style*/
+
+<style>
+	
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}	
+
+
+.heading{
+	font-size: 40px;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	
+}
+
+.covid-19{
+	background: red;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 0px 8px 16px rgba(0,0,0,0.6);
+	text-shadow: 0px 8px 10px rgba(0,0,0,0.5);
+}
+
+.brand-name{
+	background: orange;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 0px 8px 16px rgba(0,0,0,0.6);
+	text-shadow: 0px 8px 10px rgba(0,0,0,0.5);
+	animation: gokul 6s alternate infinite;
+}
+
+@keyframes gokul{
+	0%{background: blue;}
+	40%{background: green;}
+	60%{background: orange;}
+	80%{background: blue;}
+	100%{background: green;}
+
+}
+
+.container{
+	width: 90%;
+	height: 155px;
+	margin: auto;
+}
+
+.total-case-box{
+
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: calibri;
+	display: flex;
+	justify-content: space-around;
+}
+
+.total-case-box>div{
+	margin-top: 5px;
+	width: 23%;
+	height: auto;
+	border-radius: 5px;
+	background-color: #fff;
+	padding: 10px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.icon-box{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #ff002f;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+table{
+	width: 100%;
+	padding: 15px 10px;
+	margin: 10px 0;
+	text-align: center;
+	border-spacing: 0;
+}
+
+tr:first-child{
+	background-color: #37474f;
+	color: #fafafa;
+	text-transform: uppercase;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+th{
+	padding: 15px 0;
+	border: none;
+	border-spacing: 0;
+	cursor: default;
+}
+
+tr:nth-child(even) {
+	background-color: #fafafa;
+}
+
+tr:nth-child(odd){
+	background-color: #424242;
+	color: #fafafa;
+}
+
+tr td{
+	padding: 15px 0;
+}
+
+</style>
+
+
+
+</head>
+<body>
+
+<!-- navbar start -->
+<header>
+<section>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+
+  <a class="navbar-brand" href="#">COVID-19 TRACKER </a><a class="nav-link" href="#section1">India Live News</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+  <ul class="navbar-nav mr-auto">
+    
+    
+  </ul>
+</div></nav>
+</section>
+<!-- navbar end -->
+
+<!-- heading -->
+<section>
+<div class="container-fluid badge-info" style="padding-top:150px;padding-bottom:70px">
+
+		<div class="container-fluid">
+		<h5 class="text-capitalize text-center"><span class="covid-19">COVID-19</span> STATEWISE NEWS LIVE <span class="brand-name">INDIA</span></h5>
+		<hr style=" border: 1px solid black; border-radius: 4px; " class="w-25 mx-auto">
+		<h5 class="text-center text-capitalize">Source: Ministry of Health &amp; Family Welfare</h5>
+		</div>
+</div>
+</section>
+<!-- heading end -->
+
+
+<!-- main table -->
+<table style="font-size: 12px;">
+	<tbody><tr>
+		<th><b></b></th>
+		<th><b>DATA TIME</b></th>
+		<th><b>STATE</b></th>
+		<th><b>NEWS &amp; FACTS</b></th>
+
+	</tr>
+<tr><td>1</td><td>01/05/2021 21:12:25</td><td>Maharashtra</td><td>[Dec 
+16]:10,218 duplicate cases &amp; other state cases removed from total 
+cases.791 recovered cases also removed from total recovered cases while 
+reconciling 
+[Sep 9] :239 cases have been removed from the hospitalized figures owing
+ to the removal of duplicates and change of addresses as per the 
+original residence
+[Aug 15] : MH bulletin has reduced 819 confirmed cases in Mumbai and 72 
+confirmed cases from 'Other States' from the tally
+[Jun 16] : 1328 deceased cases have been retroactively added to MH 
+bulletin.
+[Jun 20] : 69 deceased cases have been reduced based on state bulletin.</td><td></td></tr><tr><td>2</td><td>01/05/2021 20:08:31</td><td>Kerala</td><td>Mahe native who expired in Kannur included in Kerala's deceased tally.
+Some non-covid deaths have also been reported in the bulletin.
+These have been reduced from active count</td><td></td></tr><tr><td>3</td><td>01/05/2021 20:08:33</td><td>Karnataka</td><td></td><td></td></tr><tr><td>4</td><td>01/05/2021 20:34:31</td><td>Andhra Pradesh</td><td></td><td></td></tr><tr><td>5</td><td>01/05/2021 20:34:36</td><td>Tamil Nadu</td><td>[July 22]: 444 backdated deceased entries added to Chennai in TN bulletin.
+2 deaths cross notified to other states from Chennai and Coimbatore.
+1 patient died after turning negative for infection in Chengalpattu.
+These cases have been added to TN deceased tally</td><td></td></tr><tr><td>6</td><td>01/05/2021 23:16:25</td><td>Delhi</td><td>[July
+ 14]: Value for the total tests conducted has been reduced by 97008 in 
+the state bulletin. Reason given : "Reconciled with ICMR figures". We 
+have made the same change.</td><td></td></tr><tr><td>7</td><td>01/05/2021 20:34:39</td><td>Uttar Pradesh</td><td>[Jan 1]:As no bulletin was provided for 31'st Dec'20,its count has been combined with 1st Jan'21
+[Jan 9]:Due to reconcillation there are 1286 cases.</td><td></td></tr><tr><td>8</td><td>01/05/2021 20:08:46</td><td>West Bengal</td><td></td><td></td></tr><tr><td>9</td><td>01/05/2021 20:08:48</td><td>Odisha</td><td>[July 12th] :20 non-covid deaths reported in state dashboard are included in the deceased count</td><td></td></tr><tr><td>10</td><td>01/05/2021 20:08:52</td><td>Rajasthan</td><td></td><td></td></tr><tr><td>11</td><td>01/05/2021 23:16:28</td><td>Chhattisgarh</td><td></td><td></td></tr><tr><td>12</td><td>01/05/2021 13:12:32</td><td>Telangana</td><td>[July
+ 27] : Telangana bulletin for the previous day is released on the next 
+day. We will add the cases for Telangana against the date of release, as
+ that is the convention that we are following for other states.</td><td></td></tr><tr><td>13</td><td>01/05/2021 21:39:27</td><td>Haryana</td><td></td><td></td></tr><tr><td>14</td><td>01/05/2021 21:12:28</td><td>Gujarat</td><td></td><td></td></tr><tr><td>15</td><td>01/05/2021 22:25:33</td><td>Bihar</td><td></td><td></td></tr><tr><td>16</td><td>01/05/2021 21:39:31</td><td>Madhya Pradesh</td><td>[Oct 14]: 4469 confirmed cases and 4469 recoveries added in MP bulletin as reconciliation with private labs and hospitals</td><td></td></tr><tr><td>17</td><td>01/05/2021 23:16:30</td><td>Assam</td><td>[Jan 1]: 1347 cases i.e Covid +'tive patients dead for other reasons have been deducted fom active count.</td><td></td></tr><tr><td>18</td><td>01/05/2021 22:25:38</td><td>Punjab</td><td></td><td></td></tr><tr><td>19</td><td>01/05/2021 23:16:32</td><td>Jammu and Kashmir</td><td></td><td></td></tr><tr><td>20</td><td>01/05/2021 23:53:40</td><td>Jharkhand</td><td></td><td></td></tr><tr><td>21</td><td>01/05/2021 23:16:34</td><td>Uttarakhand</td><td>[Oct 30]: Metric of capturing the testing data has switched to "Samples Tested" from "Samples Collected"</td><td></td></tr><tr><td>22</td><td>01/05/2021 21:39:34</td><td>Himachal Pradesh</td><td></td><td></td></tr><tr><td>23</td><td>01/05/2021 22:25:42</td><td>Goa</td><td></td><td></td></tr><tr><td>24</td><td>01/05/2021 13:12:35</td><td>Puducherry</td><td></td><td></td></tr><tr><td>25</td><td>01/05/2021 13:12:37</td><td>Tripura</td><td>[Aug
+ 4]: Tripura bulletin for the previous day is released on the next day. 
+We will add the cases for Tripura against the date of release, as that 
+is the convention that we are following for other states.</td><td></td></tr><tr><td>26</td><td>01/05/2021 22:25:44</td><td>Manipur</td><td>[Dec 14]:824 out of 980 recovered cases are backdated.</td><td></td></tr><tr><td>27</td><td>01/05/2021 21:12:37</td><td>Chandigarh</td><td></td><td></td></tr><tr><td>28</td><td>01/05/2021 22:25:47</td><td>Arunachal Pradesh</td><td>[July 25]: All numbers corresponding to Papum Pare and Captial Complex are tracked under Papum Pare district.</td><td></td></tr><tr><td>29</td><td>01/05/2021 22:25:51</td><td>Meghalaya</td><td></td><td></td></tr><tr><td>30</td><td>01/05/2021 21:12:41</td><td>Nagaland</td><td></td><td></td></tr><tr><td>31</td><td>02/05/2021 09:50:28</td><td>Ladakh</td><td></td><td></td></tr><tr><td>32</td><td>01/05/2021 22:25:53</td><td>Sikkim</td><td></td><td></td></tr><tr><td>33</td><td>01/05/2021 23:53:43</td><td>Andaman and Nicobar Islands</td><td></td><td></td></tr><tr><td>34</td><td>01/05/2021 13:30:27</td><td>Mizoram</td><td></td><td></td></tr><tr><td>35</td><td>01/05/2021 22:25:58</td><td>Dadra and Nagar Haveli and Daman and Diu</td><td></td><td></td></tr><tr><td>36</td><td>01/05/2021 22:26:00</td><td>Lakshadweep</td><td></td><td></td></tr><tr><td>37</td><td>19/07/2020 09:40:01</td><td>State Unassigned</td><td>MoHFW website reports that these are the 'cases that are being reassigned to states'. </td><td></td></tr></tbody></table>
+	
+
+
+<script>
+$(document).ready(function(){
+	const total_case = $(".total_case");
+	const total_deaths = $(".total_deaths");
+	const recovered = $(".recovered");
+	const active_case = $(".active_case");
+	var length;
+
+	$.get("https://api.covid19india.org/data.json",function(response){
+		var response= response;
+		length=response.statewise.length;
+		total_case.html(response.statewise[0].confirmed);
+		total_deaths.html(response.statewise[0].deaths);
+		recovered.html(response.statewise[0].recovered);
+		active_case.html(response.statewise[0].active);
+
+		for (var i=1;i<=length;i++){
+			$("table").append("<tr><td>"+i+"</td><td>"+response.statewise[i].lastupdatedtime+"</td><td>"+response.statewise[i].state+"</td><td>"+response.statewise[i].statenotes+"</td><td>");
+		}
+
+
+	});
+});
+</script>
+
+
+<!-- main table end -->
+
+
+
+
+	<!-- jQuery library -->
+	<script src="Covid%20Tracker2_files/jquery_002.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="Covid%20Tracker2_files/bootstrap.js"></script> 
+
+</header></body></html>
